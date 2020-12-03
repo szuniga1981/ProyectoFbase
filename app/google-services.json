@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "627306720187",
+    "project_id": "desafiofbase",
+    "storage_bucket": "desafiofbase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:627306720187:android:56f3d02e15d29d3e43329e",
+        "android_client_info": {
+          "package_name": "cl.sebastian.desafiofbase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "627306720187-oend50j77iia1c3lnbjjda9ivf2poec7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKfWR-g6p67yxPRWnKwxNlJG5hX-IfjNk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "627306720187-oend50j77iia1c3lnbjjda9ivf2poec7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:627306720187:android:2db8e4f88aabac0043329e",
+        "android_client_info": {
+          "package_name": "cl.sebastian.proyectofbase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "627306720187-oend50j77iia1c3lnbjjda9ivf2poec7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKfWR-g6p67yxPRWnKwxNlJG5hX-IfjNk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "627306720187-oend50j77iia1c3lnbjjda9ivf2poec7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
