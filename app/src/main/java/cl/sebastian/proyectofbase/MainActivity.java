@@ -3,6 +3,7 @@ package cl.sebastian.proyectofbase;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -31,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText editTextLastName;
     private EditText editTextAddress;
     private Button btnSave;
+    private Button buttonIrAFileStorage;
 
     private static final Object TAG = "Main Activity";
 
@@ -40,10 +42,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         db = FirebaseFirestore.getInstance();
 
+
         // inicializarFbase();// crear metodo inicializarFbase.
         editTextName = findViewById(R.id.et_name);
         editTextLastName = findViewById(R.id.et_last_name);
         editTextAddress = findViewById(R.id.et_address);
+        buttonIrAFileStorage = findViewById(R.id.button_file_storage);
         Button btnSave = findViewById(R.id.btn_save);
         btnSave.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -58,6 +62,17 @@ public class MainActivity extends AppCompatActivity {
                 getUsers();
             }
         });
+        //vamos a utilizar un intent explicito
+        buttonIrAFileStorage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+              irAStorage();
+            }
+        });
+    }
+    private void irAStorage() {
+        Intent intent = new Intent(this, StorageActivity.class);
+        startActivity(intent);
     }
 
     private void getUsers() {
@@ -155,9 +170,12 @@ public class MainActivity extends AppCompatActivity {
                             Toast.makeText(MainActivity.this, e.getMessage(),
                                     Toast.LENGTH_LONG).show();
                         }
+
                     });
 
         }
+
+
 
     }
 }
